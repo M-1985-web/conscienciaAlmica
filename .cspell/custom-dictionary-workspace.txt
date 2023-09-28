@@ -1,0 +1,13 @@
+# Custom Dictionary Words
+Atención
+Barbero
+calificados
+cliente
+diferenciado
+Diferenciales
+Espacio
+foto
+Localización
+personalizada
+titulo
+titulo-centralizado

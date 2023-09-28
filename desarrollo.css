@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div,p,iframe{
+    text-align: center;
+}
+
+span{
+    color: #06924c;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #73448a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3vw;
+    /* Usamos vw para que el tamaño se adapte al ancho 
+de la pantalla */
+}
+
+header p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
+    /* Usamos vw para que el tamaño se adapte al ancho 
+de la pantalla */
+}
+
+/* Estilos del menú de navegación */
+nav {
+    background-color: #b293be;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
+    /* Usamos vw para que el tamaño se adapte al ancho 
+de la pantalla */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #570770;
+}
+
+/* Estilos del contenido principal */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Por defecto, usamos tres columnas */
+    gap: 20px;
+    padding: 20px;
+}
+
+main section {
+    background-color: #df9cf2;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+main section h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2vw;
+    /* Usamos vw para que el tamaño se adapte al ancho 
+de la pantalla */
+    text-align: center;
+}
+
+main section p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
+    /* Usamos vw para que el tamaño se adapte al ancho 
+de la pantalla */
+}
+
+main section img {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    /* Usamos un porcentaje para que la imagen se 
+ajuste al contenedor */
+}
+
+main section video,
+main section iframe {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    /* Usamos un porcentaje para que el video o el 
+iframe se ajuste al contenedor */
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #dbb3f4;
+    color: rgb(14, 1, 1);
+    padding: 1px;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    /* Usamos vw para que el tamaño se adapte al ancho 
+de la pantalla */
+}
+
+
+/* Estilos para la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para la lista desordenada */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Estilos para pantallas de menos de 768px de ancho 
+(por ejemplo, tablets) */
+@media (max-width: 768px) {
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        /* Cambiamos el número de columnas a dos */
+    }
+
+}
+
+/* Estilos para pantallas de menos de 480px de ancho 
+(por ejemplo, celulares) */
+@media (max-width: 480px) {
+
+    main {
+        grid-template-columns: 1fr;
+        /* Cambiamos el número de columnas a una */
+    }
+
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consciencia Almica-Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body class="contacto__contenedor">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="desarrollo.html">Reiki</a></li>
+            </ul>
+        </nav>
+        <p class="contacto__texto">¡Nuestras Redes Sociales!</p>
+        <nav>
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100094273415441"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="https://instagram.com/conscienciaalmica?igshid=MzNlNGNkZWQ4Mg=="><i
+                            class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/@user-kd1bu1mh6e/featured"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://wa.me/+5492995809789"><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main-->
+    <main>
+        <form action="#" method="post">
+            <!-- Sección de contacto -->
+            <section id="contacto">
+                <div class="contacto__info">
+                    <h2 class="contacto__titulo">
+                        Contacto</h2>
+                    <form class="contacto__contenedor">
+                        <ul class="contacto__errores" id="errores-nombre"></ul>
+                        <input type="text" id="nombreapellido" placeholder="Nombre" class="contacto__input">
+                        <ul class="contacto__errores" id="errores-email"></ul>
+                        <input type="text" id="email" placeholder="Correo Electrónico" class="contacto__input">
+                        <ul class="contacto__errores" id="errores-asunto"></ul>
+                        <input type="text" id="Asunto" placeholder="Asunto" class="contacto__input">
+                        <ul class="contacto__errores" id="errores-mensaje"></ul>
+                        <textarea id="mensaje" class="contacto__input contacto__input-mensaje" rows="10"
+                            placeholder="Mensaje"></textarea><br>
+                        <input id="rb1" type="radio" name="estudios">
+                        <label for="rb1">Recibir información mensual</label>
+                        <br>
+                        <input id="rb2" type="radio" name="estudios">
+                        <label for="rb2">No recibir
+                            informacion</label><br>
+
+                        <div>
+                            <p>¿Qué disciplina te interesa?</p>
+                            <input type="radio" id="meditacion" name="disciplina" value="meditacion">
+                            <label for="meditacion">Registros Akashicos
+                            </label><br>
+                            <input type="radio" id="aromaterapia" name="disciplina" value="aromaterapia">
+                            <label for="aromaterapia">Entrenamiento Funcional</label><br>
+                            <input type="radio" id="reiki" name="disciplina" value="reiki">
+                            <label for="reiki">Reiki</label><br>
+                        </div>
+                        <div>
+                            <p>¿Cómo nos has conocido?</p>
+                            <input type="checkbox" id="web" name="fuente" value="web">
+                            <label for="web">Página web</label><br>
+                            <input type="checkbox" id="redes" name="fuente" value="redes">
+                            <label for="redes">Redes sociales</ label><br>
+                                <input type="checkbox" id="recomendacion" name="fuente" value=recomendacion">
+                                <label for=recomendacion">Recomendación de un amigo</label><br>
+                        </div>
+                        <div>
+                            <p>¿Te gustaría que te demos info de otra actividad?</p>
+                            <input list=opciones id=opcion name=opcion placeholder="Elige una opción">
+                            <datalist id=opciones>
+                                <option value="Registro 
+                                Akishacos">
+                                <option value="Reiki">
+                                <option value="Entrenamiento 
+                                Funcional">
+                            </datalist>
+                        </div>
+                        <div>
+                            <input class="contacto__boton" type="button" value="Enviar ">
+                        </div>
+                    </form>
+                </div>
+            </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <p class="footer__nombre">&copy; Desarrollado con mucho &hearts; por Martín Maldonado -2023</p>
+            <div class="footer__logos">
+                <a href="https://www.linkedin.com/in/martín-marcelo-maldonado-2851051b2/" target="_blank"
+                    class="footer__logo">
+                    <i class="fa-brands fa-linkedin-in"></i>LinkedIn</a>
+                <a href="https://github.com/M-1985-web" target="_blank" class="footer__logo">
+                    <i class="fa-brands fa-github-alt"></i>GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
